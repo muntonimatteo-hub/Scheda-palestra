@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Scheda forza e massa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1>Scheda forza e massa</h1>
+      <span class="save" id="saveState">Caricamento…</span>
+    </div>
+    <div class="tabs" role="tablist" id="tabs"></div>
+  </header>
+
+  <main id="main"></main>
+
+  <details class="guide" id="guide">
+    <summary>Come eseguire le ripetizioni</summary>
+    <div class="guide-body">
+      <h3>Cosa significa 4×8-10</h3>
+      <p>Il primo numero sono le serie, il secondo le ripetizioni. Con un intervallo come 8-10, scegli un carico con cui arrivi almeno a 8 ripetizioni pulite e non oltre 10. Se ne fai meno di 8 il peso è troppo alto; se ne fai più di 10 con facilità è troppo basso.</p>
+
+      <h3>Margine di 1-3 ripetizioni</h3>
+      <p>Fermati quando senti che potresti farne ancora 1-3 con tecnica corretta. Non si va a cedimento: la qualità del movimento e il recupero per la corsa contano più dell’ultima ripetizione strappata.</p>
+
+      <h3>Ritmo di ogni ripetizione</h3>
+      <p>Ogni ripetizione ha tre fasi. Il numero indica i secondi:</p>
+      <div class="tempo-visual">
+        <div><strong>2-3 s</strong>discesa controllata</div>
+        <div><strong>1 s</strong>pausa</div>
+        <div><strong>1 s</strong>salita decisa</div>
+      </div>
+      <p>La discesa (fase eccentrica) è lenta e frenata: è lì che si costruisce il muscolo. In basso fai una breve pausa senza rimbalzare. La salita è energica ma senza slanci. Negli esercizi di isolamento tieni anche un secondo di contrazione in alto.</p>
+
+      <h3>Respirazione</h3>
+      <p>Inspira durante la discesa, espira durante lo sforzo. Su panca, Hack Squat e stacchi rumeni prendi aria prima di scendere, irrigidisci l’addome come per ricevere un colpo e mantieni la tensione fino alla risalita.</p>
+
+      <h3>Esercizi per lato o per gamba</h3>
+      <p>Completa tutte le ripetizioni con un lato, poi passa all’altro senza pausa. Parti dal lato più debole e fai lo stesso numero di ripetizioni con il lato forte.</p>
+
+      <h3>Recuperi</h3>
+      <p>Esercizi principali (multiarticolari): 2-3 minuti. Complementari e isolamento: 60-120 secondi. Il pulsante «Recupero» su ogni esercizio avvia il timer corretto.</p>
+
+      <h3>Quando aumentare il carico</h3>
+      <p>Spunta la casella accanto ai kg quando completi la serie al limite alto delle ripetizioni con tecnica pulita. Quando tutte le serie sono spuntate, l’app ti segnala di salire: +2,5-5% sui multiarticolari, il minimo incremento disponibile sugli esercizi di isolamento.</p>
+    </div>
+  </details>
+
+  <p class="foot-note">Kg, note e scelte degli esercizi si salvano da soli. «Nuova settimana» salva i kg di oggi come «Ultima volta», azzera le spunte e lascia i kg come punto di partenza.</p>
+</div>
+
+<div class="timer" id="timer" role="status" aria-live="polite">
+  <div class="t" id="tVal">0:00</div>
+  <div class="l" id="tLab">Recupero</div>
+  <button type="button" id="tAdd">+30 s</button>
+  <button type="button" id="tStop">Chiudi</button>
+</div>
+
+<script src="dati.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
